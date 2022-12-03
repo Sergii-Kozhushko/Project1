@@ -212,6 +212,8 @@ public class Game {
         s1 = s.substring(0,1);
         s2 = s.substring(1,2);
         if (!isDigit(s1) || !isDigit(s2)) return false;
+        if (Integer.parseInt(s1) > 3) return false;
+        if (Integer.parseInt(s2) > 3) return false;
         return true;
     }
 
