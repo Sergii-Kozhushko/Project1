@@ -32,7 +32,7 @@ public class Homework1 {
         //3.
         String s1 = "Поросенок";
         String s2 = "Фунтик";
-        System.out.println("Результат склеивания слов '" + s1 + "' и '" + s2 + "': " +glueStr(s1, s2));
+        System.out.println("Результат склеивания слов '" + s1 + "' и '" + s2 + "': " + glueStr(s1, s2));
     }
 
 }
