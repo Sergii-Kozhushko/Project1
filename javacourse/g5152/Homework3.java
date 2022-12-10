@@ -7,7 +7,6 @@
 
 package edu.javacourse.g5152;
 
-
 import java.util.Random;
 import java.util.Scanner;
 
@@ -58,43 +57,23 @@ public class Homework3 {
     * Second Level, Задача 2. Секунды в часы
     */
    public static void sec2Hours(){
-      int sec = 0;
+      int sec;
       Random r = new Random();
-      sec = r.nextInt(28800);
+      sec = r.nextInt(28801);
       int hours = sec / 3600;
-      String hStr = "";
-      switch (hours){
-         case 0:
-            hStr = "менее часа";
-            break;
-         case 1:
-            hStr = "один час";
-            break;
-         case 2:
-            hStr = "два часа";
-            break;
-         case 3:
-            hStr = "три часа";
-            break;
-         case 4:
-            hStr = "четыре часа";
-            break;
-         case 5:
-            hStr = "пять часов";
-            break;
-         case 6:
-            hStr = "шесть часов";
-            break;
-         case 7:
-            hStr = "семь часов";
-            break;
-         case 8:
-            hStr = "восемь часов";
-            break;
-         case 9:
-            hStr = "девять часов";
-            break;
-      }
+      String hStr = switch (hours) {
+         case 0 -> "менее часа";
+         case 1 -> "один час";
+         case 2 -> "два часа";
+         case 3 -> "три часа";
+         case 4 -> "четыре часа";
+         case 5 -> "пять часов";
+         case 6 -> "шесть часов";
+         case 7 -> "семь часов";
+         case 8 -> "восемь часов";
+
+         default -> "";
+      };
       System.out.println("До конца рабочего дня осталось " + sec + " секунд или " + hStr);
    }
 
