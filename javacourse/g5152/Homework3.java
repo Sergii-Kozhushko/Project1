@@ -13,6 +13,7 @@ import java.util.Scanner;
 public class Homework3 {
 
 
+
    /**
     * Second Level, Задача 3, 4. Траффик-2. Пропсук в город по четности номера, дню недели и виду автомобиля
     */
