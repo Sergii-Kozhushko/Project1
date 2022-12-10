@@ -6,6 +6,7 @@ package edu.javacourse.g5152;/*
 import java.util.Scanner;
 
 public class TypesHomeWork {
+
     public static void main(String[] args) {
         //Part 1. Инициализировать и вывести на экран различные типы данных
         char ch1 = 'G';
