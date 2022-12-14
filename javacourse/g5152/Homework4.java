@@ -204,15 +204,22 @@ public class Homework4 {
     public static void bankomat() {
         Scanner scanner = new Scanner(System.in);
         int sumCurrency;
-        System.out.print("Ввведите сумму от 1 до 9999: ");
+        System.out.print("Введите сумму от 1 до 9999: ");
         sumCurrency = scanner.nextInt();
         System.out.println("Ваша сумма словами: " + convertNumToWord(sumCurrency));
     }
 
     public static void main(String[] args) {
+        // 1. Задача 1
         //flatNum();
+
+        // 2. Задача 2
         //switchExample();
+
+        // 3. Задача 3
         //determineSeason();
+
+        // Second level
         bankomat();
 
     }
